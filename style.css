@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background: url('images/c.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0926a8;
+    transform: scale(1.1);
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    width: 30%;
+}
+
+.project-box, .about-box {
+    width: 30%;
+    background: #080808;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-box h3, .about-box h3 {
+    margin-top: 0;
+}
+
+.project-box a, .about-box a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-box a:hover, .about-box a:hover {
+    background-color: #0926a8;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    width: 30%;
+}
+
+.project-card {
+    width: 30%;
+    background: #080808;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-card h1 {
+    margin-top: 0;
+}
+
+.project-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* @media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project-card, .project-box {
+        width: 90%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+} */
+
+
+
