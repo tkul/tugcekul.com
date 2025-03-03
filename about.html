@@ -9,15 +9,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 </head>
 <body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">TK</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
     <header>
         <h1>About Me</h1>
     </header>
     
     <section class="about-me">
-        <p>Hello! I'm Tuce, a passionate student in software development and web design, with a keen interest in evolving technologies.</p>
-        <p>While studying Software Engineering at 42 Istanbul, I have participated in various projects, enhancing my problem-solving, algorithms, and software development skills.</p>
-        <p>Additionally, I have ventured into developing my own web projects by working with frontend technologies such as HTML, CSS, and JavaScript.</p>
+        <p>Hi! I'm Tuce, a software development and web design student.</p>
+        <p>42 While studying Software Engineering in Istanbul, I worked on various projects to improve my problem solving, algorithm and software development skills.</p>
+        <p>I also try to develop my own web projects using front-end technologies such as HTML, CSS and JavaScript.</p>
+        <p>This site is my first project in this journey :)</p>
     </section>
+    
+    <div class="back-button">
+        <button onclick="goBack()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Geri Dön
+        </button>
+    </div>
     
     <script src="script.js"></script>
 </body>

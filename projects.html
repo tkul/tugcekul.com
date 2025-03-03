@@ -1,31 +1,56 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Projects</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>My Projects</h1>
-        </header>
-        
-        <section class="projects">
-            <div class="project-card" data-tilt>
-                <h3>Minishell</h3>
-                <a href="https://github.com/tkul/minishell" target="_blank">GitHub</a>
-                <p>A brief description of the project.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">TK</a>
             </div>
-            <div class="project-card" data-tilt>
-                <h3>Cub3D</h3>
-                <a href="https://github.com/tkul/42-cub3D" target="_blank">GitHub</a>
-                <p>A brief description of the project.</p>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
             </div>
-        </section>
-
-        <script src="script.js"></script>
-    </body>
-    </html>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <section class="projects">
+        <div class="project-card" data-tilt>
+            <h1><a href="https://github.com/tkul/minishell">Minishell</a></h1>
+            <p>A brief description of the project.</p>
+        </div>
+        <div class="project-card" data-tilt>
+            <h1><a href="https://github.com/tkul/42-cub3D">Cub3D</a></h1>
+            <p>A brief description of the project.</p>
+        </div>
+    </section>
+    
+    <div class="back-button">
+        <button onclick="goBack()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Geri Dön
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
