@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 body {
     margin: 0;
     background: url('images/c.gif');
-    /* background-color: #080808; */
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -71,10 +72,11 @@ header p {
 
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     margin-top: 52px;
-    width: 30%;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .project-card {
@@ -93,8 +95,10 @@ header p {
     transition: color 0.3s ease-in-out;
 }
 
-.project-box h1 a:hover {
-    color: #0926a8;
+.project-card h1 a:hover {
+    color: #5c5c5c;
+    text-decoration: underline;
+    transform: scale(1.1);
     
 }
 
@@ -144,7 +148,7 @@ header p {
 }
 
 .logo a:hover {
-    color: #0926a8;
+    color: #5c5c5c;
 }
 
 .nav-links {
@@ -161,7 +165,7 @@ header p {
 }
 
 .nav-link:hover {
-    color: #0926a8;
+    color: #5c5c5c;
 }
 
 .nav-link::after {
@@ -171,7 +175,7 @@ header p {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #0926a8;
+    background-color: #5c5c5c;
     transition: width 0.3s ease;
 }
 
@@ -180,7 +184,7 @@ header p {
 }
 
 .nav-link.active {
-    color: #0926a8;
+    color: #5c5c5c;
 }
 
 .nav-link.active::after {
