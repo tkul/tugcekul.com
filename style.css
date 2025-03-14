@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body {
     margin: 0;
     background: url('images/c.gif');
@@ -5,7 +7,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Space Mono";
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -34,19 +36,18 @@ header p {
 }
 
 .social-links a:hover {
-    color: #0926a8;
     transform: scale(1.1);
 }
 .main-content {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 30px;
     margin-top: 52px;
-    width: 32%;
+    width: 30%;
 }
 
 .project-box, .about-box {
-    width: 32%;
+    width: 30%;
     background: #080808;
     padding: 20px;
     border-radius: 12px;
@@ -65,38 +66,41 @@ header p {
 }
 
 .project-box a:hover, .about-box a:hover {
-    background-color: #0926a8;
+    background-color: #5c5c5c;
 }
 
 .projects {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 30px;
     margin-top: 52px;
-    width: 32%;
+    width: 30%;
 }
 
 .project-card {
-    width: 32%;
+    width: 30%;
     background: #080808;
-    padding: 20px;
+    padding: 4px;
     border-radius: 12px;
     box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+
 }
 
 .project-card h1 a{
     margin-top: 0;
-    text-decoration: none;
+    text-decoration:none;
     color: inherit;
     transition: color 0.3s ease-in-out;
 }
 
 .project-box h1 a:hover {
     color: #0926a8;
+    
 }
 
 .project-card p {
     color: rgba(255, 255, 255, 0.8);
+    
 }
 
 @media (max-width: 768px) {
@@ -145,7 +149,7 @@ header p {
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 30px;
 }
 
 .nav-link {
@@ -254,7 +258,7 @@ body {
 }
 
 .back-button button:hover {
-    background-color: #0926a8;
+    background-color: #5c5c5c;
     transform: translateX(-5px);
     box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.1);
 }
