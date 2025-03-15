@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
 body {
     margin: 0;
-    background: url('images/c.gif');
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -15,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(270deg, #000000, #161616, #6d6d6e);
+    background-size: 400% 400%;
+    animation: backgroundMove 10s infinite linear;
 }
 
 
@@ -49,7 +56,7 @@ header p {
 
 .project-box, .about-box {
     width: 30%;
-    background: #080808;
+    background: #202020;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
@@ -80,12 +87,11 @@ header p {
 }
 
 .project-card {
-    width: 30%;
-    background: #080808;
+    width: 16%;
+    background: #202020;
     padding: 4px;
     border-radius: 12px;
     box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
-
 }
 
 .project-card h1 a{
@@ -124,8 +130,6 @@ header p {
     left: 0;
     width: 100%;
     padding: 16px 0;
-    background-color: rgba(8, 8, 8, 0.8);
-    backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
 }
