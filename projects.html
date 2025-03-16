@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuğçe Kul</title>
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 </head>
+
 <body>
     <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
                 <a href="index.html">
                     <img src="images/logo.svg" alt="TK Logo" width="40">
-                </a>            </div>
+                </a>
+            </div>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="projects.html" class="nav-link">Projects</a>
@@ -28,43 +31,52 @@
             </div>
         </div>
     </nav>
-    
+
     <header>
         <h1>My Projects</h1>
     </header>
     <section class="projects">
         <div class="project-card" data-tilt>
             <h1><a href="https://github.com/tkul/minishell" target="_blank">Minishell</a></h1>
-            <p>Minishell is a simple Bash imitation developed at 42 Istanbul. This project aims to recreate basic Unix shell functionality and provide a customized terminal experience.</p>
+            <p>Minishell is a simple Bash imitation developed at 42 Istanbul. This project aims to recreate basic Unix
+                shell functionality and provide a customized terminal experience.</p>
         </div>
         <div class="project-card" data-tilt>
             <h1><a href="https://github.com/tkul/42-cub3D" target="_blank">Cub3D</a></h1>
-            <p>Cub3D is a simple 3D game engine developed at 42 Istanbul, inspired by Wolfenstein 3D. This project focuses on rendering a first-person view using ray-casting, handling player movement, and simulating basic interactions in a 2D map.</p>
+            <p>Cub3D is a simple 3D game engine developed at 42 Istanbul, inspired by Wolfenstein 3D. This project
+                focuses on rendering a first-person view using ray-casting, handling player movement, and simulating
+                basic interactions in a 2D map.</p>
         </div>
         <div class="project-card" data-tilt>
             <h1><a href="https://github.com/tkul/stop_sign_detector" target="_blank">Stop Sign Detector</a></h1>
-            <p>Stop Sign Detector is a simple computer vision project developed using OpenCV and Python. This project aims to detect stop signs in images and videos using a pre-trained Haar Cascade Classifier.</p>
+            <p>Stop Sign Detector is a simple computer vision project developed using OpenCV and Python. This project
+                aims to detect stop signs in images and videos using a pre-trained Haar Cascade Classifier.</p>
         </div>
         <div class="project-card" data-tilt>
             <h1><a href="https://github.com/tkul/model-training" target="_blank">Model Training</a></h1>
-            <p>Model Training is a simple machine learning project developed using TensorFlow and Python. This project aims to train a simple neural network model to classify handwritten digits using the MNIST dataset.</p>
+            <p>Model Training is a simple machine learning project developed using TensorFlow and Python. This project
+                aims to train a simple neural network model to classify handwritten digits using the MNIST dataset.</p>
         </div>
         <div class="project-card" data-tilt>
             <h1><a href="https://github.com/tkul/data_driven_prediction" target="_blank">Data-Driven Prediction</a></h1>
-            <p>Data-Driven Prediction is a simple data analysis project developed using Pandas and Python. This project aims to analyze and predict the number of COVID-19 cases in Turkey using a simple linear regression model.</p>
+            <p>Data-Driven Prediction is a simple data analysis project developed using Pandas and Python. This project
+                aims to analyze and predict the number of COVID-19 cases in Turkey using a simple linear regression
+                model.</p>
         </div>
     </section>
-    
+
     <div class="back-button">
         <button onclick="goBack()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
             Return
         </button>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
