@@ -339,3 +339,11 @@ body {
 .back-button button:hover svg {
     transform: translateX(-3px);
 }
+
+.about-me {
+    max-width: 50%;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+}
