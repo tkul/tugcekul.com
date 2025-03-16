@@ -46,21 +46,28 @@ header p {
 .social-links a:hover {
     transform: scale(1.1);
 }
+
 .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 52px;
-    width: 30%;
+    width: 100%;
+    max-width: 1200px;
 }
 
+
 .project-box, .about-box {
-    width: 30%;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
     background: #202020;
-    padding: 20px;
+    padding: 16px;
     border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
 }
+
 
 .project-box a, .about-box a {
     color: #fff;
@@ -113,16 +120,22 @@ header p {
     
 }
 
-@media (max-width: 768px) {
-  .main-content, .projects {
-    width: 92%;
-    flex-direction: column;
+@media (max-width: 768px) { 
+    .main-content, .projects {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    .project-box, .about-box, .project-card {
+      width: 90%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
   }
-  .project-box, .about-box, .project-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
+  
 
 .main-nav {
     position: fixed;
