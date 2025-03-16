@@ -7,23 +7,22 @@
     100% { background-position: 0% 50%; }
   }
 
+
 body {
-    margin: 0;
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: white;   
     font-family: "Space Mono";
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100hv;
     background: linear-gradient(270deg, #000000, #161616, #6d6d6e);
     background-size: 400% 400%;
-    animation: backgroundMove 10s infinite linear;
+    animation: backgroundMove 15s infinite linear;
 }
-
 
 header h1 {
     font-size: 2.5rem;
@@ -35,11 +34,20 @@ header p {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 52px;
+    width: 100%;
+    max-width: 1200px;
+}
+
 .social-links a {
-    color: #fff;
-    text-decoration: none;
+    text-align: center;
+    align-items: center;
     margin: 0 12px;
-    font-size: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -94,15 +102,24 @@ header p {
 }
 
 .project-card {
-    width: 16%;
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
     background: #202020;
-    padding: 4px;
+    padding: 16px;
     border-radius: 12px;
     box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center; 
+}
+
+.project-card h1 {
+    margin: 0;
+    text-align: center;
+    align-items: center;
 }
 
 .project-card h1 a{
-    margin-top: 0;
     text-decoration:none;
     color: inherit;
     transition: color 0.3s ease-in-out;
@@ -120,7 +137,7 @@ header p {
     
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .main-content, .projects {
       display: flex;
       flex-direction: column;
@@ -133,6 +150,7 @@ header p {
       margin-bottom: 20px;
       box-sizing: border-box;
       position: relative;
+      text-align: center;
     }
   }
   
@@ -143,7 +161,7 @@ header p {
     left: 0;
     width: 100%;
     padding: 16px 0;
-    z-index: 1000;
+    z-index: 5;
     transition: all 0.3s ease;
 }
 
@@ -166,6 +184,11 @@ header p {
 
 .logo a:hover {
     color: #5c5c5c;
+}
+
+.logo a img {
+    border-radius: 12px;
+    filter: invert(1) drop-shadow(0 0 0.2rem gray) contrast(2);
 }
 
 .nav-links {
@@ -228,23 +251,25 @@ header p {
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
-        top: 60px;
+        top: 0;
         right: -100%;
         flex-direction: column;
         background-color: rgba(8, 8, 8, 0.95);
         width: 72%;
         height: calc(100vh - 60px);
-        padding: 40px 0;
+        padding: 80px 0 40px 0;
         gap: 20px;
         align-items: center;
         transition: right 0.3s ease;
     }
 
     .nav-links.open {
+        z-index: 7;
         right: 0;
     }
 
     .mobile-menu-btn {
+        z-index: 10;
         display: flex;
     }
 
