@@ -155,69 +155,6 @@ header p {
 
 }
 
-@media (max-width: 768px) {
-
-    .main-content,
-    .projects {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .project-box,
-    .about-box,
-    .project-card {
-        width: 90%;
-        max-width: 400px;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-        position: relative;
-        text-align: center;
-    }
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        flex-direction: column;
-        background-color: rgba(8, 8, 8, 0.95);
-        width: 72%;
-        height: calc(100vh - 60px);
-        padding: 80px 0 40px 0;
-        gap: 20px;
-        align-items: center;
-        transition: right 0.3s ease;
-    }
-
-    .nav-links.open {
-        z-index: 7;
-        right: 0;
-    }
-
-    .mobile-menu-btn {
-        z-index: 10;
-        display: flex;
-    }
-
-    body {
-        padding-top: 72px;
-    }
-    .flip-card {
-        width: 90%;
-        height: 400px;
-    }
-    .grid-item {
-        width: calc(50% - 10px);
-        filter: saturate();
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-item {
-        width: 100%;
-    }
-}
-
 .main-nav {
     position: fixed;
     top: 0;
@@ -443,4 +380,71 @@ header p {
 
 .grid-item img:hover {
     filter: saturate(1);
+}
+
+
+@media (max-width: 768px) {
+
+    .main-content,
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-box,
+    .about-box,
+    .project-card {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        background-color: rgba(8, 8, 8, 0.95);
+        width: 72%;
+        height: 100vh;
+        padding: 80px 0 40px 0;
+        gap: 20px;
+        align-items: center;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.open {
+        z-index: 7;
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        z-index: 10;
+        display: flex;
+    }
+
+    body {
+        padding-top: 72px;
+    }
+
+    .flip-card {
+        width: 90%;
+        height: 400px;
+    }
+
+    .grid-item {
+        width: calc(50% - 10px);
+        filter: saturate();
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        width: 100%;
+    }
 }
