@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(270deg, #000000, #161616, #6d6d6e);
+    background: linear-gradient(270deg, #000000, #29292b, #5c5c5c);
     background-size: 400% 400%;
     animation: backgroundMove 15s infinite linear;
 }
@@ -340,10 +340,72 @@ body {
     transform: translateX(-3px);
 }
 
-.about-me {
+/* .about-me {
     max-width: 50%;
-}
+} */
 
 .about-me p {
     margin-bottom: 20px;
+    display: inline-flex;
+}
+
+.flip-card {
+    background-color: inherit;
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    perspective: 1000px;
+    margin: 50px auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: inherit;
+    color: white;
+}
+
+.flip-card-back {
+    background-color: #5c5c5c;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-content {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .flip-card {
+        width: 90%;
+        height: 400px;
+    }
 }
