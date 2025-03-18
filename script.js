@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelectorAll(".project-card").length > 0) {
-      VanillaTilt.init(document.querySelectorAll(".project-card"), {
-        max: 15,
-        speed: 300,
-        glare: true,
-        "max-glare": 0.3
-      });
+        VanillaTilt.init(document.querySelectorAll(".project-card"), {
+            max: 15,
+            speed: 300,
+            glare: true,
+            "max-glare": 0.3
+        });
     }
 
     gsap.from("h1", { opacity: 0, y: -50, duration: 1 });
@@ -17,27 +17,27 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('open');
         });
     }
-    
+
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks2 = document.querySelectorAll('.nav-link');
-    
+
     navLinks2.forEach(link => {
         const linkPage = link.getAttribute('href');
-        if (linkPage === currentPage || 
+        if (linkPage === currentPage ||
             (currentPage === '' && linkPage === 'index.html')) {
             link.classList.add('active');
         }
     });
-    
+
     gsap.from(".main-nav", { y: -100, opacity: 0, duration: 1 });
 });
 
@@ -52,11 +52,12 @@ function goBack() {
 document.addEventListener("DOMContentLoaded", () => {
 
     if (document.querySelector('.back-button')) {
-        gsap.from(".back-button", { 
-            opacity: 0, 
-            y: 30, 
+        gsap.from(".back-button", {
+            opacity: 0,
+            y: 30,
             duration: 0.8,
             delay: 0.5
         });
     }
 });
+
