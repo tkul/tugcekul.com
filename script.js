@@ -8,20 +8,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    gsap.from("h1", { opacity: 0, y: -50, duration: 1 });
-    gsap.from(".social-links a", { opacity: 0, y: 20, duration: 1 });
-    gsap.from(".project-box", { opacity: 0, y: 50, duration: 1 });
-    gsap.from(".project-card", { opacity: 0, y: 50, duration: 1 });
-    gsap.from(".about-box", { opacity: 0, y: 50, duration: 1 });
-    gsap.from(".about-me", { opacity: 0, y: 50, duration: 1 });
+    if (document.querySelector("h1")) {
+        gsap.from("h1", { opacity: 0, y: -50, duration: 1 });
+    }
+    if (document.querySelector(".social-links a")) {
+        gsap.from(".social-links a", { opacity: 0, y: 20, duration: 1 });
+    }
+    if (document.querySelector(".project-box")) {
+        gsap.from(".project-box", { opacity: 0, y: 50, duration: 1 });
+    }
+    if (document.querySelector(".project-card")) {
+        gsap.from(".project-card", { opacity: 0, y: 50, duration: 1 });
+    }
+    if (document.querySelector(".about-box")) {
+        gsap.from(".about-box", { opacity: 0, y: 50, duration: 1 });
+    }
+    if (document.querySelector(".about-me")) {
+        gsap.from(".about-me", { opacity: 0, y: 50, duration: 1 });
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if (mobileMenuBtn) {
+    if (mobileMenuBtn && navLinks) {
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('open');
         });
@@ -38,7 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    gsap.from(".main-nav", { y: -100, opacity: 0, duration: 1 });
+    if (document.querySelector(".main-nav")) {
+        gsap.from(".main-nav", { y: -100, opacity: 0, duration: 1 });
+    }
 });
 
 function goBack() {
@@ -50,7 +63,6 @@ function goBack() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
     if (document.querySelector('.back-button')) {
         gsap.from(".back-button", {
             opacity: 0,
@@ -61,3 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var grid = document.querySelector('.grid');
+    var masonry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item',
+        percentPosition: true,
+        gutter: 10
+    });
+});
