@@ -82,3 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
         gutter: 10
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".flip-card").forEach(card => {
+        card.addEventListener("click", () => {
+            card.querySelector(".flip-card-inner").classList.toggle("flipped");
+        });
+    });
+});

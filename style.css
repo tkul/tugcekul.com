@@ -310,7 +310,7 @@ header p {
     border-radius: 10px;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card-inner.flipped {
     transform: rotateY(180deg);
 }
 
