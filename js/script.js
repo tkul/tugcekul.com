@@ -58,4 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // return block
+    function goBack() {
+        if (window.history.length > 1) {
+            window.history.back();
+        }
+        else {
+            window.location.href = 'index.html';
+        }
+    }
+
+    if (document.querySelector('.back-button')) {
+        document.querySelector('.back-button').addEventListener('click', goBack);
+    }
 });
